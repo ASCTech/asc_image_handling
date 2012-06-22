@@ -10,7 +10,6 @@ dependencies[] = galleryformatter
 dependencies[] = lightbox2
 dependencies[] = list
 dependencies[] = media
-dependencies[] = mediafield
 dependencies[] = views
 features[ctools][] = file_entity:file_default_displays:1
 features[ctools][] = views:views_default:3.0
