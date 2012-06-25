@@ -23,3 +23,4 @@ features[file_display][] = image__default__lightbox2_image
 features[taxonomy][] = image_terms_1
 features[taxonomy][] = image_terms_2
 features[taxonomy][] = image_terms_3
+files[] = asc_image_handling.test
