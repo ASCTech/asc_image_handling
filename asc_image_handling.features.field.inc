@@ -10,16 +10,14 @@
 function asc_image_handling_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-page-body'.
-  $fields['node-page-body'] = array(
+  // Exported field: 'file-image-field_file_image_alt_text'.
+  $fields['file-image-field_file_image_alt_text'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
-      'entity_types' => array(
-        0 => 'node',
-      ),
-      'field_name' => 'body',
+      'entity_types' => array(),
+      'field_name' => 'field_file_image_alt_text',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -35,62 +33,83 @@ function asc_image_handling_field_default_fields() {
       ),
       'locked' => '0',
       'module' => 'text',
-      'settings' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
       'translatable' => '0',
-      'type' => 'text_with_summary',
+      'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'page',
+      'bundle' => 'image',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Alternative text for image display.',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
+          'type' => 'hidden',
           'weight' => '1',
         ),
-        'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'trim_length' => 600,
-          ),
-          'type' => 'text_summary_or_trimmed',
-          'weight' => '0',
+        'media_large' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_link' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_original' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_preview' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_small' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
-      'entity_type' => 'node',
-      'field_name' => 'body',
-      'label' => 'Body',
-      'required' => FALSE,
+      'entity_type' => 'file',
+      'field_name' => 'field_file_image_alt_text',
+      'label' => 'Alt Text',
+      'required' => 1,
       'settings' => array(
-        'display_summary' => TRUE,
-        'text_processing' => 1,
+        'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => 20,
-          'summary_rows' => 5,
+          'size' => '300',
         ),
-        'type' => 'text_textarea_with_summary',
+        'type' => 'text_textfield',
         'weight' => '-4',
       ),
     ),
   );
 
-  // Exported field: 'node-page-field_displaythumbs'.
-  $fields['node-page-field_displaythumbs'] = array(
+  // Exported field: 'file-image-field_gallery'.
+  $fields['file-image-field_gallery'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_displaythumbs',
+      'field_name' => 'field_gallery',
       'foreign keys' => array(),
       'indexes' => array(
         'value' => array(
@@ -101,8 +120,8 @@ function asc_image_handling_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          0 => '0',
-          1 => '1',
+          0 => '',
+          1 => '',
         ),
         'allowed_values_function' => '',
       ),
@@ -110,32 +129,55 @@ function asc_image_handling_field_default_fields() {
       'type' => 'list_boolean',
     ),
     'field_instance' => array(
-      'bundle' => 'page',
+      'bundle' => 'image',
       'default_value' => array(
         0 => array(
           'value' => 0,
         ),
       ),
       'deleted' => '0',
-      'description' => 'Check this box to enable the thumbnail pager under your slideshow.',
+      'description' => 'Check box to make a part of gallery displays.',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
-          'module' => 'list',
+          'label' => 'above',
           'settings' => array(),
-          'type' => 'list_default',
-          'weight' => '2',
+          'type' => 'hidden',
+          'weight' => '5',
         ),
-        'teaser' => array(
+        'media_large' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_link' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_original' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_preview' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_small' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
         ),
       ),
-      'entity_type' => 'node',
-      'field_name' => 'field_displaythumbs',
-      'label' => 'Display Thumbnails',
+      'entity_type' => 'file',
+      'field_name' => 'field_gallery',
+      'label' => 'Display in Gallery',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -152,113 +194,297 @@ function asc_image_handling_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-page-field_slideshow'.
-  $fields['node-page-field_slideshow'] = array(
+  // Exported field: 'file-image-field_image_terms_1'.
+  $fields['file-image-field_image_terms_1'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_slideshow',
+      'field_name' => 'field_image_terms_1',
       'foreign keys' => array(
-        'fid' => array(
+        'tid' => array(
           'columns' => array(
-            'fid' => 'fid',
+            'tid' => 'tid',
           ),
-          'table' => 'file_managed',
+          'table' => 'taxonomy_term_data',
         ),
       ),
       'indexes' => array(
-        'fid' => array(
-          0 => 'fid',
+        'tid' => array(
+          0 => 'tid',
         ),
       ),
       'locked' => '0',
-      'module' => 'image',
+      'module' => 'taxonomy',
       'settings' => array(
-        'default_image' => 0,
-        'uri_scheme' => 'public',
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'image_terms_1',
+            'parent' => '0',
+          ),
+        ),
       ),
       'translatable' => '0',
-      'type' => 'image',
+      'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'page',
+      'bundle' => 'image',
+      'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Image(s) to display in a slideshow at the top of the page.',
+      'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'galleryformatter',
-          'settings' => array(
-            'link_to_full' => 1,
-            'link_to_full_style' => 'test2',
-            'linking_method' => 'onclick_full',
-            'modal' => 'lightbox2',
-            'slide_style' => 'slider',
-            'style' => 'Greenarrows',
-            'thumb_style' => 'sliderthumb',
-          ),
-          'type' => 'galleryformatter_default',
-          'weight' => '0',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
         ),
-        'teaser' => array(
+        'media_large' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_link' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_original' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_preview' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_small' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
         ),
       ),
-      'entity_type' => 'node',
-      'field_name' => 'field_slideshow',
-      'label' => 'Slideshow Images',
+      'entity_type' => 'file',
+      'field_name' => 'field_image_terms_1',
+      'label' => 'Image Terms 1',
       'required' => 0,
       'settings' => array(
-        'alt_field' => 0,
-        'default_image' => 0,
-        'file_directory' => '',
-        'file_extensions' => 'png gif jpg jpeg',
-        'max_filesize' => '',
-        'max_resolution' => '',
-        'min_resolution' => '',
-        'title_field' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'media',
-        'settings' => array(
-          'allowed_schemes' => array(
-            'public' => 'public',
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '0',
+      ),
+    ),
+  );
+
+  // Exported field: 'file-image-field_image_terms_2'.
+  $fields['file-image-field_image_terms_2'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_image_terms_2',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
           ),
-          'allowed_types' => array(
-            0 => 0,
-            'audio' => 0,
-            'default' => 0,
-            'image' => 'image',
-            'video' => 0,
-          ),
-          'browser_plugins' => array(
-            'library' => 'library',
-            'media_default--media_browser_1' => 'media_default--media_browser_1',
-            'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
-            'upload' => 'upload',
-          ),
-          'progress_indicator' => 'throbber',
+          'table' => 'taxonomy_term_data',
         ),
-        'type' => 'media_generic',
-        'weight' => '-2',
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'image_terms_2',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'image',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
+        ),
+        'media_large' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_link' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_original' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_preview' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_small' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'file',
+      'field_name' => 'field_image_terms_2',
+      'label' => 'Image Terms 2',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported field: 'file-image-field_image_terms_3'.
+  $fields['file-image-field_image_terms_3'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_image_terms_3',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'image_terms_3',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'image',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
+        'media_large' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_link' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_original' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_preview' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_small' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'file',
+      'field_name' => 'field_image_terms_3',
+      'label' => 'Image Terms 3',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '2',
       ),
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
-  t('Check this box to enable the thumbnail pager under your slideshow.');
-  t('Display Thumbnails');
-  t('Image(s) to display in a slideshow at the top of the page.');
-  t('Slideshow Images');
+  t('Alt Text');
+  t('Alternative text for image display.');
+  t('Check box to make a part of gallery displays.');
+  t('Display in Gallery');
+  t('Image Terms 1');
+  t('Image Terms 2');
+  t('Image Terms 3');
 
   return $fields;
 }
