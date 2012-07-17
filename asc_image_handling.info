@@ -1,4 +1,4 @@
-name = asc_image_handling
+name = ASC Image Handling
 description = Image file type, fileds and styles for ASC.
 core = 7.x
 package = ASC
@@ -8,6 +8,7 @@ dependencies[] = features
 dependencies[] = file_entity (>7.x-1.9)
 dependencies[] = galleryformatter
 dependencies[] = list
+dependencies[] = lightbox2
 dependencies[] = media (>7.x-1.9)
 dependencies[] = taxonomy
 features[ctools][] = file_entity:file_default_displays:1
