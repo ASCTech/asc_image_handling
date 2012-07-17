@@ -9,7 +9,15 @@
  */
 function asc_image_handling_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "ds" && $api == "ds") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "file_entity" && $api == "file_default_displays") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
+  if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
 }
@@ -19,6 +27,52 @@ function asc_image_handling_ctools_plugin_api() {
  */
 function asc_image_handling_image_default_styles() {
   $styles = array();
+
+  // Exported image style: full_width.
+  $styles['full_width'] = array(
+    'name' => 'full_width',
+    'effects' => array(
+      1 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => '630',
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported image style: half_width.
+  $styles['half_width'] = array(
+    'name' => 'half_width',
+    'effects' => array(
+      3 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => '365',
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
 
   // Exported image style: modal.
   $styles['modal'] = array(
@@ -55,6 +109,29 @@ function asc_image_handling_image_default_styles() {
           'anchor' => 'center-center',
         ),
         'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported image style: quarter_width.
+  $styles['quarter_width'] = array(
+    'name' => 'quarter_width',
+    'effects' => array(
+      5 => array(
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
+        'module' => 'image',
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => '180',
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => '1',
       ),
     ),
   );
