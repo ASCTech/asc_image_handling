@@ -28,6 +28,52 @@ function asc_image_handling_ctools_plugin_api() {
 function asc_image_handling_image_default_styles() {
   $styles = array();
 
+  // Exported image style: front_short.
+  $styles['front_short'] = array(
+    'name' => 'front_short',
+    'effects' => array(
+      2 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => '470',
+          'height' => '263',
+          'anchor' => 'center-center',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported image style: front_tall.
+  $styles['front_tall'] = array(
+    'name' => 'front_tall',
+    'effects' => array(
+      1 => array(
+        'label' => 'Crop',
+        'help' => 'Cropping will remove portions of an image to make it the specified dimensions.',
+        'effect callback' => 'image_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_crop_form',
+        'summary theme' => 'image_crop_summary',
+        'module' => 'image',
+        'name' => 'image_crop',
+        'data' => array(
+          'width' => '470',
+          'height' => '583',
+          'anchor' => 'center-center',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
   // Exported image style: full_width.
   $styles['full_width'] = array(
     'name' => 'full_width',
