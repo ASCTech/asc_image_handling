@@ -118,7 +118,14 @@ function asc_image_handling_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '4',
+        ),
+      ),
       'display' => array(),
     ),
   );
@@ -146,7 +153,7 @@ function asc_image_handling_strongarm() {
   $strongarm->name = 'node_options_page';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
+    1 => 'revision',
   );
   $export['node_options_page'] = $strongarm;
 

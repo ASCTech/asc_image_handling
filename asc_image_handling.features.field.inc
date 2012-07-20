@@ -794,7 +794,7 @@ function asc_image_handling_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '-4',
+        'weight' => '2',
       ),
     ),
   );
@@ -898,7 +898,7 @@ function asc_image_handling_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => '-1',
+        'weight' => '3',
       ),
     ),
   );
@@ -1070,7 +1070,7 @@ function asc_image_handling_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
-        'weight' => '-2',
+        'weight' => '1',
       ),
     ),
   );
