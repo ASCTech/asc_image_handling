@@ -23,6 +23,13 @@ function asc_image_handling_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function asc_image_handling_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
  * Implements hook_image_default_styles().
  */
 function asc_image_handling_image_default_styles() {
