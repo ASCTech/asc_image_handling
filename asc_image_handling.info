@@ -10,6 +10,7 @@ dependencies[] = ds
 dependencies[] = features
 dependencies[] = file_entity
 dependencies[] = galleryformatter
+dependencies[] = galleryformatter_advance
 dependencies[] = lightbox2
 dependencies[] = list
 dependencies[] = markdown
