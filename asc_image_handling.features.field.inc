@@ -10,6 +10,98 @@
 function asc_image_handling_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'file-image-field_caption'.
+  $fields['file-image-field_caption'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_caption',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'image',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Visible caption and/or advisory title.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '1',
+        ),
+        'media_large' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_link' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_original' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_preview' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'media_small' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'file',
+      'field_name' => 'field_caption',
+      'label' => 'Caption',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '2',
+      ),
+    ),
+  );
+
   // Exported field: 'file-image-field_file_image_alt_text'.
   $fields['file-image-field_file_image_alt_text'] = array(
     'field_config' => array(
@@ -49,7 +141,7 @@ function asc_image_handling_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'full_page_width' => array(
           'label' => 'hidden',
@@ -139,7 +231,7 @@ function asc_image_handling_field_default_fields() {
           'size' => '300',
         ),
         'type' => 'text_textfield',
-        'weight' => '-4',
+        'weight' => '3',
       ),
     ),
   );
@@ -184,7 +276,7 @@ function asc_image_handling_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '5',
+          'weight' => '6',
         ),
         'full_page_width' => array(
           'label' => 'above',
@@ -273,7 +365,7 @@ function asc_image_handling_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => '-1',
+        'weight' => '4',
       ),
     ),
   );
@@ -322,7 +414,7 @@ function asc_image_handling_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'full_page_width' => array(
           'label' => 'hidden',
@@ -409,7 +501,7 @@ function asc_image_handling_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '0',
+        'weight' => '5',
       ),
     ),
   );
@@ -458,7 +550,7 @@ function asc_image_handling_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '4',
+          'weight' => '5',
         ),
         'full_page_width' => array(
           'label' => 'hidden',
@@ -545,7 +637,7 @@ function asc_image_handling_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '1',
+        'weight' => '6',
       ),
     ),
   );
@@ -594,7 +686,7 @@ function asc_image_handling_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '3',
+          'weight' => '4',
         ),
         'full_page_width' => array(
           'label' => 'hidden',
@@ -681,7 +773,7 @@ function asc_image_handling_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '2',
+        'weight' => '7',
       ),
     ),
   );
@@ -1056,11 +1148,11 @@ function asc_image_handling_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
-            'image' => 'image',
-            'video' => 0,
-            0 => 0,
             'audio' => 0,
             'default' => 0,
+            0 => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
           'browser_plugins' => array(
             'library' => 'library',
@@ -1081,6 +1173,7 @@ function asc_image_handling_field_default_fields() {
   t('Alt Text');
   t('Alternative text for image display.');
   t('Body');
+  t('Caption');
   t('Check box to make a part of gallery displays.');
   t('Check this box to enable the thumbnail pager under your slideshow.');
   t('Display Thumbnails');
@@ -1090,6 +1183,7 @@ function asc_image_handling_field_default_fields() {
   t('Image Terms 3');
   t('Image(s) to display in a slideshow at the top of the page.');
   t('Slideshow Images');
+  t('Visible caption and/or advisory title.');
 
   return $fields;
 }
