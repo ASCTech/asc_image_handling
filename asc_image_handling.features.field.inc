@@ -51,6 +51,18 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => '1',
         ),
+        'full_page_width' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'half_page_width' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'media_large' => array(
           'label' => 'above',
           'settings' => array(),
@@ -76,6 +88,12 @@ function asc_image_handling_field_default_fields() {
           'weight' => 0,
         ),
         'media_small' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'quarter_page_width' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',

@@ -36,7 +36,8 @@ function asc_image_handling_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
-  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'gallery-image';
   $handler->display->display_options['row_plugin'] = 'file';
   /* Field: File: Name */
   $handler->display->display_options['fields']['filename']['id'] = 'filename';
