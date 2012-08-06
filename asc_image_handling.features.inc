@@ -50,7 +50,7 @@ function asc_image_handling_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => '460',
-          'height' => '262',
+          'height' => '232',
         ),
         'weight' => '1',
       ),

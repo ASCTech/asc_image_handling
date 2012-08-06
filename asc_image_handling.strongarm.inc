@@ -171,5 +171,26 @@ function asc_image_handling_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_page'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_image_terms_1_pattern';
+  $strongarm->value = 'gallery/[term:tid]';
+  $export['pathauto_taxonomy_term_image_terms_1_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_image_terms_2_pattern';
+  $strongarm->value = 'gallery/[term:tid]';
+  $export['pathauto_taxonomy_term_image_terms_2_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_image_terms_3_pattern';
+  $strongarm->value = 'gallery/[term:tid]';
+  $export['pathauto_taxonomy_term_image_terms_3_pattern'] = $strongarm;
+
   return $export;
 }

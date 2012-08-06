@@ -13,6 +13,48 @@ function asc_image_handling_default_fe_block_settings() {
   // q7
   $theme = array();
 
+  $theme['asc_taxonomy_filter-image_terms_1'] = array(
+    'module' => 'asc_taxonomy_filter',
+    'delta' => 'image_terms_1',
+    'theme' => 'q7',
+    'status' => '1',
+    'weight' => '-29',
+    'region' => 'content',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => '',
+    'title' => '',
+    'cache' => '1',
+  );
+
+  $theme['asc_taxonomy_filter-image_terms_2'] = array(
+    'module' => 'asc_taxonomy_filter',
+    'delta' => 'image_terms_2',
+    'theme' => 'q7',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'sidebar',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => '',
+    'title' => '',
+    'cache' => '1',
+  );
+
+  $theme['asc_taxonomy_filter-image_terms_3'] = array(
+    'module' => 'asc_taxonomy_filter',
+    'delta' => 'image_terms_3',
+    'theme' => 'q7',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'sidebar',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => '',
+    'title' => '',
+    'cache' => '1',
+  );
+
   $theme['block-blank'] = array(
     'module' => 'block',
     'theme' => 'q7',
@@ -22,10 +64,7 @@ function asc_image_handling_default_fe_block_settings() {
     'custom' => '0',
     'visibility' => '0',
     'pages' => '<front>
-blog*
-directory*
-events*
-news*
+directory
 people*',
     'title' => '<none>',
     'cache' => -1,
