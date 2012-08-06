@@ -1054,7 +1054,7 @@ function asc_image_handling_field_default_fields() {
           'module' => 'galleryformatter',
           'settings' => array(
             'link_to_full' => 1,
-            'link_to_full_style' => '0',
+            'link_to_full_style' => 'full_width',
             'linking_method' => 'onclick_full',
             'modal' => 'lightbox2',
             'slide_style' => 'slider',
@@ -1120,7 +1120,7 @@ function asc_image_handling_field_default_fields() {
           'module' => 'galleryformatter',
           'settings' => array(
             'link_to_full' => 1,
-            'link_to_full_style' => '0',
+            'link_to_full_style' => 'full_width',
             'linking_method' => 'onclick_full',
             'modal' => 'lightbox2',
             'slide_style' => 'front_tall',
