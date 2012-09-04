@@ -35,6 +35,7 @@ function asc_image_handling_wysiwyg_default_profiles() {
           'Link' => 1,
           'Unlink' => 1,
           'Anchor' => 1,
+          'Source' => 1,
           'Cut' => 1,
           'Copy' => 1,
           'PasteText' => 1,
