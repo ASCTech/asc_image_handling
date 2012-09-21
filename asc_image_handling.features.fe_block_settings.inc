@@ -18,7 +18,7 @@ function asc_image_handling_default_fe_block_settings() {
     'delta' => 'image_terms_1',
     'theme' => 'q7',
     'status' => '1',
-    'weight' => '-29',
+    'weight' => '-21',
     'region' => 'content',
     'custom' => '0',
     'visibility' => '1',
@@ -32,7 +32,7 @@ function asc_image_handling_default_fe_block_settings() {
     'delta' => 'image_terms_2',
     'theme' => 'q7',
     'status' => '1',
-    'weight' => '0',
+    'weight' => '-14',
     'region' => 'sidebar',
     'custom' => '0',
     'visibility' => '1',
@@ -46,7 +46,7 @@ function asc_image_handling_default_fe_block_settings() {
     'delta' => 'image_terms_3',
     'theme' => 'q7',
     'status' => '1',
-    'weight' => '0',
+    'weight' => '-15',
     'region' => 'sidebar',
     'custom' => '0',
     'visibility' => '1',
@@ -59,7 +59,7 @@ function asc_image_handling_default_fe_block_settings() {
     'module' => 'block',
     'theme' => 'q7',
     'status' => '1',
-    'weight' => '0',
+    'weight' => '-25',
     'region' => 'sidebar',
     'custom' => '0',
     'visibility' => '0',
@@ -69,25 +69,6 @@ people*',
     'title' => '<none>',
     'cache' => -1,
     'machine_name' => 'blank',
-  );
-
-  $theme['menu_block-ASC Main Block-1'] = array(
-    'module' => 'menu_block',
-    'delta' => 'ASC Main Block-1',
-    'theme' => 'q7',
-    'status' => '1',
-    'weight' => '0',
-    'region' => 'sidebar',
-    'custom' => '0',
-    'visibility' => '0',
-    'pages' => '<front>
-blog*
-directory*
-events*
-news*
-people*',
-    'title' => '<none>',
-    'cache' => -1,
   );
 
   $export['q7'] = $theme;

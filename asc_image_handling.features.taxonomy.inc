@@ -10,12 +10,12 @@
 function asc_image_handling_taxonomy_default_vocabularies() {
   return array(
     'image_terms_1' => array(
-      'name' => 'Image Terms 1',
+      'name' => 'image2',
       'machine_name' => 'image_terms_1',
       'description' => 'Describes the first set of terms for images.',
       'hierarchy' => '0',
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => '-9',
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -33,12 +33,12 @@ function asc_image_handling_taxonomy_default_vocabularies() {
       ),
     ),
     'image_terms_2' => array(
-      'name' => 'Image Terms 2',
+      'name' => 'image3',
       'machine_name' => 'image_terms_2',
       'description' => 'Description for second set of image terms.',
       'hierarchy' => '0',
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => '-8',
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -56,12 +56,12 @@ function asc_image_handling_taxonomy_default_vocabularies() {
       ),
     ),
     'image_terms_3' => array(
-      'name' => 'Image Terms 3',
+      'name' => 'image1-b',
       'machine_name' => 'image_terms_3',
       'description' => 'Description for third set of image terms.',
       'hierarchy' => '0',
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => '-10',
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
