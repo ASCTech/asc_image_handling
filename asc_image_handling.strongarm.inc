@@ -137,6 +137,7 @@ function asc_image_handling_strongarm() {
   $strongarm->name = 'menu_options_page';
   $strongarm->value = array(
     0 => 'main-menu',
+    1 => 'menu-quick-links',
   );
   $export['menu_options_page'] = $strongarm;
 

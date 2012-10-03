@@ -21,22 +21,6 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: administer pathauto.
-  $permissions['administer pathauto'] = array(
-    'name' => 'administer pathauto',
-    'roles' => array(),
-    'module' => 'pathauto',
-  );
-
-  // Exported permission: administer url aliases.
-  $permissions['administer url aliases'] = array(
-    'name' => 'administer url aliases',
-    'roles' => array(
-      0 => 'Site Administrator',
-    ),
-    'module' => 'path',
-  );
-
   // Exported permission: create page content.
   $permissions['create page content'] = array(
     'name' => 'create page content',
@@ -46,16 +30,6 @@ function asc_image_handling_user_default_permissions() {
       2 => 'Site Administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: create url aliases.
-  $permissions['create url aliases'] = array(
-    'name' => 'create url aliases',
-    'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
-    ),
-    'module' => 'path',
   );
 
   // Exported permission: delete any page content.
@@ -111,13 +85,6 @@ function asc_image_handling_user_default_permissions() {
       2 => 'Site Administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: notify of path changes.
-  $permissions['notify of path changes'] = array(
-    'name' => 'notify of path changes',
-    'roles' => array(),
-    'module' => 'pathauto',
   );
 
   // Exported permission: view file.
