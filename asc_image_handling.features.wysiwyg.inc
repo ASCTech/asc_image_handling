@@ -17,7 +17,7 @@ function asc_image_handling_wysiwyg_default_profiles() {
     'settings' => array(
       'default' => 1,
       'user_choose' => 0,
-      'show_toggle' => 1,
+      'show_toggle' => 0,
       'theme' => 'advanced',
       'language' => 'en',
       'buttons' => array(
@@ -35,6 +35,7 @@ function asc_image_handling_wysiwyg_default_profiles() {
           'Link' => 1,
           'Unlink' => 1,
           'Anchor' => 1,
+          'media' => 1,
           'Source' => 1,
           'Cut' => 1,
           'Copy' => 1,
@@ -46,10 +47,6 @@ function asc_image_handling_wysiwyg_default_profiles() {
           'SelectAll' => 1,
           'Replace' => 1,
           'Maximize' => 1,
-          'SpellChecker' => 1,
-        ),
-        'drupal' => array(
-          'media' => 1,
         ),
       ),
       'toolbar_loc' => 'top',
