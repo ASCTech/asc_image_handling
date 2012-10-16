@@ -49,6 +49,7 @@ function asc_image_handling_wysiwyg_default_profiles() {
         ),
         'drupal' => array(
           'media' => 1,
+          'break' => 1,
         ),
       ),
       'toolbar_loc' => 'top',
@@ -65,7 +66,7 @@ function asc_image_handling_wysiwyg_default_profiles() {
       'css_setting' => 'theme',
       'css_path' => '',
       'css_classes' => '',
-      'buttonorder' => 'Bold,Italic,JustifyLeft,JustifyCenter,JustifyRight,BulletedList,NumberedList,Outdent,Indent,Undo,Link,Unlink,Anchor,media,Source,Cut,Copy,PasteText,PasteFromWord,RemoveFormat,SpecialChar,Format,SelectAll,Replace,Maximize',
+      'buttonorder' => 'Bold,Italic,JustifyLeft,JustifyCenter,JustifyRight,BulletedList,NumberedList,Outdent,Indent,Undo,Link,Unlink,Anchor,media,Source,Cut,Copy,PasteText,PasteFromWord,RemoveFormat,SpecialChar,Format,SelectAll,Replace,Maximize,break',
     ),
     'rdf_mapping' => array(),
   );
