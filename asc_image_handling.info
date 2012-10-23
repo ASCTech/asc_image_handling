@@ -19,6 +19,7 @@ dependencies[] = media
 dependencies[] = menu_block
 dependencies[] = strongarm
 dependencies[] = taxonomy
+dependencies[] = taxonomy_entity_index
 dependencies[] = wysiwyg
 dependencies[] = wysiwyg_button_order
 datestamp = 1343330689
