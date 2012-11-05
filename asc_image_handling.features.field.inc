@@ -1018,7 +1018,7 @@ function asc_image_handling_field_default_fields() {
   $fields['node-page-field_slideshow'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '8',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_slideshow',
@@ -1166,11 +1166,11 @@ function asc_image_handling_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
-            'image' => 'image',
-            'video' => 0,
             0 => 0,
             'audio' => 0,
             'default' => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
           'browser_plugins' => array(
             'library' => 'library',
