@@ -73,5 +73,14 @@ function asc_image_handling_ds_view_modes_info() {
   );
   $export['quarter_page_width'] = $ds_view_mode;
 
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'square';
+  $ds_view_mode->label = 'Square';
+  $ds_view_mode->entities = array(
+    'file' => 'file',
+  );
+  $export['square'] = $ds_view_mode;
+
   return $export;
 }

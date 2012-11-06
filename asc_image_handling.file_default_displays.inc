@@ -82,5 +82,23 @@ function asc_image_handling_file_default_displays() {
   );
   $export['image__quarter_page_width__file_image'] = $file_display;
 
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
+  $file_display->name = 'image__square__file_field_file_default';
+  $file_display->weight = 0;
+  $file_display->status = FALSE;
+  $file_display->settings = '';
+  $export['image__square__file_field_file_default'] = $file_display;
+
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
+  $file_display->name = 'image__square__file_image';
+  $file_display->weight = 0;
+  $file_display->status = TRUE;
+  $file_display->settings = array(
+    'image_style' => 'square_thumbnail',
+  );
+  $export['image__square__file_image'] = $file_display;
+
   return $export;
 }
