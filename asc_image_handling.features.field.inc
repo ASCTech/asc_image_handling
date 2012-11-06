@@ -1054,7 +1054,7 @@ function asc_image_handling_field_default_fields() {
   $fields['node-page-field_slideshow'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '8',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_slideshow',
