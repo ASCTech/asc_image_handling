@@ -14,9 +14,9 @@ function asc_image_handling_user_default_permissions() {
   $permissions['administer files'] = array(
     'name' => 'administer files',
     'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
-      2 => 'Content Editor',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'file_entity',
   );
@@ -25,8 +25,8 @@ function asc_image_handling_user_default_permissions() {
   $permissions['create page content'] = array(
     'name' => 'create page content',
     'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node',
   );
@@ -35,8 +35,8 @@ function asc_image_handling_user_default_permissions() {
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
     'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node',
   );
@@ -45,8 +45,8 @@ function asc_image_handling_user_default_permissions() {
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
     'roles' => array(
-      0 => 'Content Manager',
-      1 => 'Site Administrator',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node',
   );
@@ -55,9 +55,9 @@ function asc_image_handling_user_default_permissions() {
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node',
   );
@@ -66,9 +66,9 @@ function asc_image_handling_user_default_permissions() {
   $permissions['edit file'] = array(
     'name' => 'edit file',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'file_entity',
   );
@@ -77,9 +77,9 @@ function asc_image_handling_user_default_permissions() {
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      'Content Editor' => 'Content Editor',
+      'Content Manager' => 'Content Manager',
+      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'node',
   );
@@ -88,8 +88,8 @@ function asc_image_handling_user_default_permissions() {
   $permissions['view file'] = array(
     'name' => 'view file',
     'roles' => array(
-      0 => 'anonymous user',
-      1 => 'authenticated user',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
