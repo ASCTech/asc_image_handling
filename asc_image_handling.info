@@ -11,6 +11,7 @@ dependencies[] = fe_block
 dependencies[] = features
 dependencies[] = file_entity
 dependencies[] = galleryformatter
+dependencies[] = galleryformatter_advance
 dependencies[] = list
 dependencies[] = markdown
 dependencies[] = media
