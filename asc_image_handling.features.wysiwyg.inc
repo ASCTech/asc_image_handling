@@ -24,6 +24,7 @@ function asc_image_handling_wysiwyg_default_profiles() {
         'default' => array(
           'Bold' => 1,
           'Italic' => 1,
+          'HorizontalRule' => 1,
           'JustifyLeft' => 1,
           'JustifyCenter' => 1,
           'JustifyRight' => 1,
@@ -66,7 +67,7 @@ function asc_image_handling_wysiwyg_default_profiles() {
       'css_setting' => 'self',
       'css_path' => '/profiles/asc/themes/q7/css/global.css',
       'css_classes' => '',
-      'buttonorder' => 'Bold,Italic,JustifyLeft,JustifyCenter,JustifyRight,BulletedList,NumberedList,Outdent,Indent,Undo,Link,Unlink,Anchor,media,Source,Cut,Copy,PasteText,PasteFromWord,RemoveFormat,SpecialChar,Format,SelectAll,Replace,Maximize,break',
+      'buttonorder' => 'Bold,Italic,JustifyLeft,JustifyCenter,JustifyRight,BulletedList,NumberedList,Outdent,Indent,Undo,Link,Unlink,Anchor,media,Source,Cut,Copy,PasteText,PasteFromWord,RemoveFormat,SpecialChar,Format,SelectAll,Replace,Maximize,break,HoritontalRule',
     ),
     'rdf_mapping' => array(),
   );
