@@ -37,6 +37,7 @@ function asc_image_handling_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'gallery-image';
   $handler->display->display_options['row_plugin'] = 'file';
+  $handler->display->display_options['row_options']['view_mode'] = 'square';
   $handler->display->display_options['row_options']['links'] = 1;
   /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
@@ -95,7 +96,7 @@ function asc_image_handling_views_default_views() {
   );
 
   /* Display: Gallery */
-  $handler = $view->new_display('page', 'Gallery', 'page');
+  $handler = $view->new_display('page', 'Gallery', 'gallery_page');
   $handler->display->display_options['display_description'] = 'Gallery page for filterable display of dynamic image collections.';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'gallery';

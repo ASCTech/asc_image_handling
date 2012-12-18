@@ -96,7 +96,7 @@ function asc_image_handling_file_default_displays() {
   $file_display->weight = 0;
   $file_display->status = TRUE;
   $file_display->settings = array(
-    'image_style' => 'square_thumbnail',
+    'image_style' => '150_square',
   );
   $export['image__square__file_image'] = $file_display;
 

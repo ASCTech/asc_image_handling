@@ -26,7 +26,7 @@ function asc_image_handling_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function asc_image_handling_views_api() {
-  return array("api" => "3.0");
+  return array("version" => "3.0");
 }
 
 /**
