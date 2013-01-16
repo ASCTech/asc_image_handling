@@ -84,7 +84,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: view file.
+  /* Exported permission: view file.
   $permissions['view file'] = array(
     'name' => 'view file',
     'roles' => array(
@@ -92,7 +92,7 @@ function asc_image_handling_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
-  );
+  );*/
 
   return $permissions;
 }
