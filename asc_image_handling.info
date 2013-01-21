@@ -22,6 +22,7 @@ dependencies[] = node
 dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = taxonomy
+dependencies[] = taxonomy_entity_index
 dependencies[] = text
 dependencies[] = views
 dependencies[] = wysiwyg
