@@ -24,7 +24,6 @@ function asc_image_handling_wysiwyg_default_profiles() {
         'default' => array(
           'Bold' => 1,
           'Italic' => 1,
-          'HorizontalRule' => 1,
           'JustifyLeft' => 1,
           'JustifyCenter' => 1,
           'JustifyRight' => 1,
@@ -37,6 +36,7 @@ function asc_image_handling_wysiwyg_default_profiles() {
           'Unlink' => 1,
           'Anchor' => 1,
           'Source' => 1,
+          'HorizontalRule' => 1,
           'Cut' => 1,
           'Copy' => 1,
           'PasteText' => 1,
@@ -56,7 +56,7 @@ function asc_image_handling_wysiwyg_default_profiles() {
       'toolbar_loc' => 'top',
       'toolbar_align' => 'left',
       'path_loc' => 'bottom',
-      'resizing' => 1,
+      'resizing' => 0,
       'verify_html' => 1,
       'preformatted' => 0,
       'convert_fonts_to_spans' => 1,
@@ -67,7 +67,7 @@ function asc_image_handling_wysiwyg_default_profiles() {
       'css_setting' => 'self',
       'css_path' => '/profiles/asc/themes/q7/css/global.css',
       'css_classes' => '',
-      'buttonorder' => 'Bold,Italic,JustifyLeft,JustifyCenter,JustifyRight,BulletedList,NumberedList,Outdent,Indent,Undo,Link,Unlink,Anchor,media,Source,Cut,Copy,PasteText,PasteFromWord,RemoveFormat,SpecialChar,Format,SelectAll,Replace,Maximize,break,HoritontalRule',
+      'buttonorder' => 'Bold,Italic,HorizontalRule,JustifyLeft,JustifyCenter,JustifyRight,BulletedList,NumberedList,Outdent,Indent,Undo,Link,Unlink,Anchor,media,Source,Cut,Copy,PasteText,PasteFromWord,RemoveFormat,SpecialChar,Format,SelectAll,Replace,Maximize,break',
     ),
     'rdf_mapping' => array(),
   );
