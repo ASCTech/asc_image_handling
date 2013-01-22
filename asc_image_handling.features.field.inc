@@ -51,6 +51,12 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => '1',
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'full_page_width' => array(
           'label' => 'above',
           'settings' => array(),
@@ -58,12 +64,6 @@ function asc_image_handling_field_default_fields() {
           'weight' => 0,
         ),
         'half_page_width' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'media_large' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -81,13 +81,7 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_preview' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'media_small' => array(
+        'preview' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -104,6 +98,12 @@ function asc_image_handling_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '1',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'file',
@@ -167,6 +167,12 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => '2',
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'full_page_width' => array(
           'label' => 'hidden',
           'settings' => array(),
@@ -191,12 +197,6 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => '1',
         ),
-        'media_large' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
         'media_link' => array(
           'label' => 'above',
           'settings' => array(),
@@ -209,13 +209,7 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_preview' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'media_small' => array(
+        'preview' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -244,6 +238,12 @@ function asc_image_handling_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '2',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'file',
@@ -308,6 +308,12 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => '6',
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'full_page_width' => array(
           'label' => 'above',
           'settings' => array(),
@@ -332,12 +338,6 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => '5',
         ),
-        'media_large' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
         'media_link' => array(
           'label' => 'above',
           'settings' => array(),
@@ -350,13 +350,7 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_preview' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'media_small' => array(
+        'preview' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -385,6 +379,12 @@ function asc_image_handling_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '6',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'file',
@@ -452,6 +452,12 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => '3',
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'full_page_width' => array(
           'label' => 'hidden',
           'settings' => array(),
@@ -476,12 +482,6 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => '2',
         ),
-        'media_large' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
         'media_link' => array(
           'label' => 'above',
           'settings' => array(),
@@ -494,13 +494,7 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_preview' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'media_small' => array(
+        'preview' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -529,6 +523,12 @@ function asc_image_handling_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '3',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'file',
@@ -594,6 +594,12 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => '5',
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'full_page_width' => array(
           'label' => 'hidden',
           'settings' => array(),
@@ -618,12 +624,6 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => '4',
         ),
-        'media_large' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
         'media_link' => array(
           'label' => 'above',
           'settings' => array(),
@@ -636,13 +636,7 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_preview' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'media_small' => array(
+        'preview' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -671,6 +665,12 @@ function asc_image_handling_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '5',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'file',
@@ -736,6 +736,12 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => '4',
         ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'full_page_width' => array(
           'label' => 'hidden',
           'settings' => array(),
@@ -760,12 +766,6 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => '3',
         ),
-        'media_large' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
         'media_link' => array(
           'label' => 'above',
           'settings' => array(),
@@ -778,13 +778,7 @@ function asc_image_handling_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_preview' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'media_small' => array(
+        'preview' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -813,6 +807,12 @@ function asc_image_handling_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '4',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'file',
@@ -1054,7 +1054,7 @@ function asc_image_handling_field_default_fields() {
   $fields['node-page-field_slideshow'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '8',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_slideshow',
@@ -1202,8 +1202,8 @@ function asc_image_handling_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
-            0 => 0,
             'audio' => 0,
+            0 => 0,
             'default' => 0,
             'image' => 'image',
             'video' => 0,

@@ -10,14 +10,28 @@
 function asc_image_handling_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: administer file types.
+  $permissions['administer file types'] = array(
+    'name' => 'administer file types',
+    'roles' => array(),
+    'module' => 'file_entity',
+  );
+
   // Exported permission: administer files.
   $permissions['administer files'] = array(
     'name' => 'administer files',
     'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
+      0 => 'Content Editor',
+      1 => 'Content Manager',
+      2 => 'Site Administrator',
     ),
+    'module' => 'file_entity',
+  );
+
+  // Exported permission: create files.
+  $permissions['create files'] = array(
+    'name' => 'create files',
+    'roles' => array(),
     'module' => 'file_entity',
   );
 
@@ -25,51 +39,72 @@ function asc_image_handling_user_default_permissions() {
   $permissions['create page content'] = array(
     'name' => 'create page content',
     'roles' => array(
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
+      0 => 'Content Manager',
+      1 => 'Site Administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: delete any files.
+  $permissions['delete any files'] = array(
+    'name' => 'delete any files',
+    'roles' => array(),
+    'module' => 'file_entity',
   );
 
   // Exported permission: delete any page content.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
     'roles' => array(
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
+      0 => 'Content Manager',
+      1 => 'Site Administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: delete own files.
+  $permissions['delete own files'] = array(
+    'name' => 'delete own files',
+    'roles' => array(),
+    'module' => 'file_entity',
   );
 
   // Exported permission: delete own page content.
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
     'roles' => array(
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
+      0 => 'Content Manager',
+      1 => 'Site Administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: edit any files.
+  $permissions['edit any files'] = array(
+    'name' => 'edit any files',
+    'roles' => array(
+      0 => 'Content Editor',
+      1 => 'Content Manager',
+      2 => 'Site Administrator',
+    ),
+    'module' => 'file_entity',
   );
 
   // Exported permission: edit any page content.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
     'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
+      0 => 'Content Editor',
+      1 => 'Content Manager',
+      2 => 'Site Administrator',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: edit file.
-  $permissions['edit file'] = array(
-    'name' => 'edit file',
-    'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
-    ),
+  // Exported permission: edit own files.
+  $permissions['edit own files'] = array(
+    'name' => 'edit own files',
+    'roles' => array(),
     'module' => 'file_entity',
   );
 
@@ -77,22 +112,47 @@ function asc_image_handling_user_default_permissions() {
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
     'roles' => array(
-      'Content Editor' => 'Content Editor',
-      'Content Manager' => 'Content Manager',
-      'Site Administrator' => 'Site Administrator',
+      0 => 'Content Editor',
+      1 => 'Content Manager',
+      2 => 'Site Administrator',
     ),
     'module' => 'node',
   );
 
-  /* Exported permission: view file.
-  $permissions['view file'] = array(
-    'name' => 'view file',
+  // Exported permission: use text format html.
+  $permissions['use text format html'] = array(
+    'name' => 'use text format html',
     'roles' => array(
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
+      0 => 'Content Editor',
+      1 => 'Content Manager',
+      2 => 'Site Administrator',
+    ),
+    'module' => 'filter',
+  );
+
+  // Exported permission: view files.
+  $permissions['view files'] = array(
+    'name' => 'view files',
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'authenticated user',
     ),
     'module' => 'file_entity',
-  );*/
+  );
+
+  // Exported permission: view own files.
+  $permissions['view own files'] = array(
+    'name' => 'view own files',
+    'roles' => array(),
+    'module' => 'file_entity',
+  );
+
+  // Exported permission: view own private files.
+  $permissions['view own private files'] = array(
+    'name' => 'view own private files',
+    'roles' => array(),
+    'module' => 'file_entity',
+  );
 
   return $permissions;
 }
