@@ -10,6 +10,15 @@
 function asc_image_handling_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: administer exclude node title.
+  $permissions['administer exclude node title'] = array(
+    'name' => 'administer exclude node title',
+    'roles' => array(
+      0 => 'Site Administrator',
+    ),
+    'module' => 'exclude_node_title',
+  );
+
   // Exported permission: administer file types.
   $permissions['administer file types'] = array(
     'name' => 'administer file types',
@@ -21,9 +30,7 @@ function asc_image_handling_user_default_permissions() {
   $permissions['administer files'] = array(
     'name' => 'administer files',
     'roles' => array(
-      0 => 'Content Editor',
-      1 => 'Content Manager',
-      2 => 'Site Administrator',
+      0 => 'Site Administrator',
     ),
     'module' => 'file_entity',
   );
@@ -31,7 +38,11 @@ function asc_image_handling_user_default_permissions() {
   // Exported permission: create files.
   $permissions['create files'] = array(
     'name' => 'create files',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Content Editor',
+      1 => 'Content Manager',
+      2 => 'Site Administrator',
+    ),
     'module' => 'file_entity',
   );
 
@@ -48,7 +59,9 @@ function asc_image_handling_user_default_permissions() {
   // Exported permission: delete any files.
   $permissions['delete any files'] = array(
     'name' => 'delete any files',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Site Administrator',
+    ),
     'module' => 'file_entity',
   );
 
@@ -65,7 +78,11 @@ function asc_image_handling_user_default_permissions() {
   // Exported permission: delete own files.
   $permissions['delete own files'] = array(
     'name' => 'delete own files',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Content Editor',
+      1 => 'Content Manager',
+      2 => 'Site Administrator',
+    ),
     'module' => 'file_entity',
   );
 
@@ -104,7 +121,11 @@ function asc_image_handling_user_default_permissions() {
   // Exported permission: edit own files.
   $permissions['edit own files'] = array(
     'name' => 'edit own files',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Content Editor',
+      1 => 'Content Manager',
+      2 => 'Site Administrator',
+    ),
     'module' => 'file_entity',
   );
 
@@ -117,6 +138,39 @@ function asc_image_handling_user_default_permissions() {
       2 => 'Site Administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: exclude any node title.
+  $permissions['exclude any node title'] = array(
+    'name' => 'exclude any node title',
+    'roles' => array(
+      0 => 'Site Administrator',
+    ),
+    'module' => 'exclude_node_title',
+  );
+
+  // Exported permission: exclude own node title.
+  $permissions['exclude own node title'] = array(
+    'name' => 'exclude own node title',
+    'roles' => array(
+      0 => 'Site Administrator',
+    ),
+    'module' => 'exclude_node_title',
+  );
+
+  // Exported permission: use exclude node title.
+  $permissions['use exclude node title'] = array(
+    'name' => 'use exclude node title',
+    'roles' => array(
+      0 => 'Content Editor',
+      1 => 'Content Manager',
+      2 => 'Site Administrator',
+      3 => 'Webform Manager',
+      4 => 'Webform Viewer',
+      5 => 'anonymous user',
+      6 => 'authenticated user',
+    ),
+    'module' => 'exclude_node_title',
   );
 
   // Exported permission: use text format html.
@@ -143,14 +197,20 @@ function asc_image_handling_user_default_permissions() {
   // Exported permission: view own files.
   $permissions['view own files'] = array(
     'name' => 'view own files',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Content Editor',
+      1 => 'Content Manager',
+      2 => 'Site Administrator',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: view own private files.
   $permissions['view own private files'] = array(
     'name' => 'view own private files',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Site Administrator',
+    ),
     'module' => 'file_entity',
   );
 
