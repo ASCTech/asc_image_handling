@@ -13,6 +13,33 @@ function asc_image_handling_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'exclude_node_title_content_type_modes_page';
+  $strongarm->value = array(
+    'full' => 'full',
+    'teaser' => 0,
+    'rss' => 0,
+    'search_index' => 0,
+    'search_result' => 0,
+    'token' => 0,
+    'front_rotor_short' => 0,
+    'front_rotor_tall' => 0,
+    'front_text' => 0,
+    'front_quick_text' => 0,
+    'revision' => 0,
+    'nodeform' => 0,
+  );
+  $export['exclude_node_title_content_type_modes_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'exclude_node_title_content_type_value_page';
+  $strongarm->value = 'user';
+  $export['exclude_node_title_content_type_value_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_file__image';
   $strongarm->value = array(
     'view_modes' => array(
