@@ -26,26 +26,5 @@ function asc_image_handling_filter_default_formats() {
     ),
   );
 
-  // Exported format: Markdown.
-  $formats['markdown'] = array(
-    'format' => 'markdown',
-    'name' => 'Markdown',
-    'cache' => '1',
-    'status' => '1',
-    'weight' => '0',
-    'filters' => array(
-      'filter_markdown' => array(
-        'weight' => '0',
-        'status' => '1',
-        'settings' => array(),
-      ),
-      'media_filter' => array(
-        'weight' => '2',
-        'status' => '1',
-        'settings' => array(),
-      ),
-    ),
-  );
-
   return $formats;
 }
