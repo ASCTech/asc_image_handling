@@ -18,44 +18,40 @@ function asc_image_handling_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_caption',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
+      'foreign keys' => array(),
       'indexes' => array(
-        'format' => array(
-          0 => 'format',
+        'value' => array(
+          0 => 'value',
         ),
       ),
       'locked' => '0',
-      'module' => 'text',
+      'module' => 'list',
       'settings' => array(
-        'max_length' => '255',
+        'allowed_values' => array(
+          0 => '',
+          1 => '',
+        ),
+        'allowed_values_function' => '',
       ),
       'translatable' => '0',
-      'type' => 'text',
+      'type' => 'list_boolean',
     ),
     'field_instance' => array(
       'bundle' => 'image',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'value' => 0,
+        ),
+      ),
       'deleted' => '0',
-      'description' => 'Visible caption and/or advisory title.',
+      'description' => 'Use Title text as visual caption when possible. ',
       'display' => array(
         'default' => array(
           'label' => 'above',
+          'module' => 'list',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '1',
-        ),
-        'full' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'type' => 'list_default',
+          'weight' => 7,
         ),
         'full_page_width' => array(
           'label' => 'above',
@@ -64,18 +60,6 @@ function asc_image_handling_field_default_fields() {
           'weight' => 0,
         ),
         'half_page_width' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'media_link' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'media_original' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -97,12 +81,6 @@ function asc_image_handling_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '1',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
           'weight' => 0,
         ),
       ),
@@ -111,17 +89,16 @@ function asc_image_handling_field_default_fields() {
       'label' => 'Caption',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'text',
+        'module' => 'options',
         'settings' => array(
-          'size' => '60',
+          'display_label' => 1,
         ),
-        'type' => 'text_textfield',
-        'weight' => '2',
+        'type' => 'options_onoff',
+        'weight' => '3',
       ),
     ),
   );
@@ -261,7 +238,7 @@ function asc_image_handling_field_default_fields() {
           'size' => '300',
         ),
         'type' => 'text_textfield',
-        'weight' => '3',
+        'weight' => '4',
       ),
     ),
   );
@@ -401,7 +378,7 @@ function asc_image_handling_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => '4',
+        'weight' => '5',
       ),
     ),
   );
@@ -543,7 +520,7 @@ function asc_image_handling_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '5',
+        'weight' => '6',
       ),
     ),
   );
@@ -685,7 +662,7 @@ function asc_image_handling_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '6',
+        'weight' => '7',
       ),
     ),
   );
@@ -827,7 +804,7 @@ function asc_image_handling_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '7',
+        'weight' => '8',
       ),
     ),
   );
@@ -1202,11 +1179,11 @@ function asc_image_handling_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
-            'image' => 'image',
-            'video' => 0,
-            0 => 0,
             'audio' => 0,
             'default' => 0,
+            0 => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
           'browser_plugins' => array(
             'library' => 'library',
@@ -1237,7 +1214,7 @@ function asc_image_handling_field_default_fields() {
   t('Image Terms 3');
   t('Image(s) to display in a slideshow at the top of the page.');
   t('Slideshow Images');
-  t('Visible caption and/or advisory title.');
+  t('Use Title text as visual caption when possible. ');
 
   return $fields;
 }
