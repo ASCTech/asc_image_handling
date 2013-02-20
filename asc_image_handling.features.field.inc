@@ -1031,7 +1031,7 @@ function asc_image_handling_field_default_fields() {
   $fields['node-page-field_slideshow'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '8',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_slideshow',
@@ -1177,19 +1177,21 @@ function asc_image_handling_field_default_fields() {
         'settings' => array(
           'allowed_schemes' => array(
             'public' => 'public',
+            'vimeo' => 0,
+            'youtube' => 0,
           ),
           'allowed_types' => array(
             'audio' => 0,
-            'default' => 0,
-            0 => 0,
+            'document' => 0,
             'image' => 'image',
             'video' => 0,
           ),
           'browser_plugins' => array(
-            'library' => 'library',
             'media_default--media_browser_1' => 'media_default--media_browser_1',
             'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+            'media_internet' => 0,
             'upload' => 'upload',
+            'youtube' => 0,
           ),
           'progress_indicator' => 'throbber',
         ),
