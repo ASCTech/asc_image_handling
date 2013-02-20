@@ -52,6 +52,7 @@ features[fe_block_settings][] = block-blank
 features[features_api][] = api:1
 features[field][] = file-image-field_caption
 features[field][] = file-image-field_file_image_alt_text
+features[field][] = file-image-field_file_image_title_text
 features[field][] = file-image-field_gallery
 features[field][] = file-image-field_image_terms_1
 features[field][] = file-image-field_image_terms_2
