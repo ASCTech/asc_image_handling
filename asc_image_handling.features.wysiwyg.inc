@@ -48,9 +48,6 @@ function asc_image_handling_wysiwyg_default_profiles() {
           'Replace' => 1,
           'Maximize' => 1,
         ),
-        'imce' => array(
-          'imce' => 1,
-        ),
         'drupal' => array(
           'media' => 1,
           'break' => 1,
@@ -70,7 +67,7 @@ function asc_image_handling_wysiwyg_default_profiles() {
       'css_setting' => 'self',
       'css_path' => '/profiles/asc/themes/q7/css/global.css',
       'css_classes' => '',
-      'buttonorder' => 'Bold,Italic,HorizontalRule,JustifyLeft,JustifyCenter,JustifyRight,BulletedList,NumberedList,Outdent,Indent,Undo,Link,Unlink,Anchor,media,Source,Cut,Copy,PasteText,PasteFromWord,RemoveFormat,SpecialChar,Format,SelectAll,Replace,Maximize,imce,break',
+      'buttonorder' => 'Bold,Italic,HorizontalRule,JustifyLeft,JustifyCenter,JustifyRight,BulletedList,NumberedList,Outdent,Indent,Undo,Link,Unlink,Anchor,media,Source,Cut,Copy,PasteText,PasteFromWord,RemoveFormat,SpecialChar,Format,SelectAll,Replace,Maximize,break',
     ),
     'rdf_mapping' => array(),
   );
