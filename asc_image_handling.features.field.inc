@@ -330,7 +330,7 @@ function asc_image_handling_field_default_fields() {
       'entity_type' => 'file',
       'field_name' => 'field_file_image_title_text',
       'label' => 'Title Text',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'text_processing' => '0',
         'user_register_form' => FALSE,
