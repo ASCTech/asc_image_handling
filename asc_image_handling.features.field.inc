@@ -48,10 +48,9 @@ function asc_image_handling_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'list',
           'settings' => array(),
-          'type' => 'list_default',
-          'weight' => 7,
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'full_page_width' => array(
           'label' => 'above',
@@ -95,7 +94,7 @@ function asc_image_handling_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(
-          'display_label' => 1,
+          'display_label' => 0,
         ),
         'type' => 'options_onoff',
         'weight' => '3',
