@@ -20,14 +20,6 @@ function asc_image_handling_file_default_displays() {
 
   $file_display = new stdClass();
   $file_display->api_version = 1;
-  $file_display->name = 'document__default__file_field_file_default';
-  $file_display->weight = 0;
-  $file_display->status = TRUE;
-  $file_display->settings = '';
-  $export['document__default__file_field_file_default'] = $file_display;
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
   $file_display->name = 'document__default__file_field_file_rendered';
   $file_display->weight = 0;
   $file_display->status = FALSE;
@@ -122,14 +114,6 @@ function asc_image_handling_file_default_displays() {
 
   $file_display = new stdClass();
   $file_display->api_version = 1;
-  $file_display->name = 'document__preview__file_field_file_default';
-  $file_display->weight = 0;
-  $file_display->status = FALSE;
-  $file_display->settings = '';
-  $export['document__preview__file_field_file_default'] = $file_display;
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
   $file_display->name = 'document__preview__file_field_file_rendered';
   $file_display->weight = 0;
   $file_display->status = FALSE;
@@ -192,14 +176,6 @@ function asc_image_handling_file_default_displays() {
 
   $file_display = new stdClass();
   $file_display->api_version = 1;
-  $file_display->name = 'image__default__file_field_file_default';
-  $file_display->weight = -43;
-  $file_display->status = FALSE;
-  $file_display->settings = '';
-  $export['image__default__file_field_file_default'] = $file_display;
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
   $file_display->name = 'image__default__file_image';
   $file_display->weight = -45;
   $file_display->status = TRUE;
@@ -253,14 +229,6 @@ function asc_image_handling_file_default_displays() {
     'image_style' => 'half_width',
   );
   $export['image__half_page_width__file_image'] = $file_display;
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
-  $file_display->name = 'image__preview__file_field_file_default';
-  $file_display->weight = 0;
-  $file_display->status = FALSE;
-  $file_display->settings = '';
-  $export['image__preview__file_field_file_default'] = $file_display;
 
   $file_display = new stdClass();
   $file_display->api_version = 1;
@@ -440,36 +408,6 @@ function asc_image_handling_file_default_displays() {
 
   $file_display = new stdClass();
   $file_display->api_version = 1;
-  $file_display->name = 'video__default__media_vimeo_image';
-  $file_display->weight = -46;
-  $file_display->status = TRUE;
-  $file_display->settings = array(
-    'image_style' => 'large',
-  );
-  $export['video__default__media_vimeo_image'] = $file_display;
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
-  $file_display->name = 'video__default__media_vimeo_video';
-  $file_display->weight = -45;
-  $file_display->status = TRUE;
-  $file_display->settings = array(
-    'width' => '560',
-    'height' => '340',
-    'autoplay' => 0,
-  );
-  $export['video__default__media_vimeo_video'] = $file_display;
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
-  $file_display->name = 'video__preview__file_field_file_default';
-  $file_display->weight = 0;
-  $file_display->status = FALSE;
-  $file_display->settings = '';
-  $export['video__preview__file_field_file_default'] = $file_display;
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
   $file_display->name = 'video__preview__file_field_file_rendered';
   $file_display->weight = 0;
   $file_display->status = FALSE;
@@ -529,16 +467,6 @@ function asc_image_handling_file_default_displays() {
   $file_display->status = FALSE;
   $file_display->settings = '';
   $export['video__preview__lightbox2_image'] = $file_display;
-
-  $file_display = new stdClass();
-  $file_display->api_version = 1;
-  $file_display->name = 'video__preview__media_vimeo_image';
-  $file_display->weight = 0;
-  $file_display->status = TRUE;
-  $file_display->settings = array(
-    'image_style' => 'square_thumbnail',
-  );
-  $export['video__preview__media_vimeo_image'] = $file_display;
 
   $file_display = new stdClass();
   $file_display->api_version = 1;

@@ -54,7 +54,6 @@ function asc_image_handling_views_default_views() {
   $handler->display->display_options['fields']['filename']['label'] = '';
   $handler->display->display_options['fields']['filename']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['filename']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['filename']['link_to_file'] = TRUE;
   /* Field: Global: Contextual Links */
   $handler->display->display_options['fields']['contextual_links']['id'] = 'contextual_links';
   $handler->display->display_options['fields']['contextual_links']['table'] = 'views';
@@ -79,7 +78,7 @@ function asc_image_handling_views_default_views() {
   $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
-  /* Contextual filter: Taxonomy Entity Index: Has taxonomy term ID on File (indexed in taxonomy_entity_index) */
+  /* Contextual filter: Broken/missing handler */
   $handler->display->display_options['arguments']['taxonomy_entity_index_tid']['id'] = 'taxonomy_entity_index_tid';
   $handler->display->display_options['arguments']['taxonomy_entity_index_tid']['table'] = 'file_managed';
   $handler->display->display_options['arguments']['taxonomy_entity_index_tid']['field'] = 'taxonomy_entity_index_tid';
@@ -100,6 +99,29 @@ function asc_image_handling_views_default_views() {
   $handler->display->display_options['display_description'] = 'Gallery page for filterable display of dynamic image collections.';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'gallery';
+  $translatables['image_gallery'] = array(
+    t('Master'),
+    t('Image Gallery'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('No Results'),
+    t('Please check back for more gallery images!'),
+    t('Upload date'),
+    t('All'),
+    t('Gallery'),
+    t('Gallery page for filterable display of dynamic image collections.'),
+  );
   $export['image_gallery'] = $view;
 
   return $export;
