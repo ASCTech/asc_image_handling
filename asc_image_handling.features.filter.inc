@@ -14,13 +14,13 @@ function asc_image_handling_filter_default_formats() {
   $formats['html'] = array(
     'format' => 'html',
     'name' => 'HTML',
-    'cache' => 1,
-    'status' => 1,
-    'weight' => 0,
+    'cache' => '1',
+    'status' => '1',
+    'weight' => '0',
     'filters' => array(
       'media_filter' => array(
-        'weight' => 2,
-        'status' => 1,
+        'weight' => '2',
+        'status' => '1',
         'settings' => array(),
       ),
     ),

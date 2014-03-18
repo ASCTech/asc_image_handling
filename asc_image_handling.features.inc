@@ -7,13 +7,16 @@
 /**
  * Implements hook_ctools_plugin_api().
  */
-function asc_image_handling_ctools_plugin_api($module = NULL, $api = NULL) {
+function asc_image_handling_ctools_plugin_api() {
+  list($module, $api) = func_get_args();
   if ($module == "ds" && $api == "ds") {
     return array("version" => "1");
   }
+  list($module, $api) = func_get_args();
   if ($module == "file_entity" && $api == "file_default_displays") {
     return array("version" => "1");
   }
+  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -22,7 +25,7 @@ function asc_image_handling_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_views_api().
  */
-function asc_image_handling_views_api($module = NULL, $api = NULL) {
+function asc_image_handling_views_api() {
   return array("api" => "3.0");
 }
 
