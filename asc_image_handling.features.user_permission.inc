@@ -10,7 +10,7 @@
 function asc_image_handling_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: administer exclude node title.
+  // Exported permission: 'administer exclude node title'.
   $permissions['administer exclude node title'] = array(
     'name' => 'administer exclude node title',
     'roles' => array(
@@ -19,14 +19,14 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'exclude_node_title',
   );
 
-  // Exported permission: administer file types.
+  // Exported permission: 'administer file types'.
   $permissions['administer file types'] = array(
     'name' => 'administer file types',
     'roles' => array(),
     'module' => 'file_entity',
   );
 
-  // Exported permission: administer files.
+  // Exported permission: 'administer files'.
   $permissions['administer files'] = array(
     'name' => 'administer files',
     'roles' => array(
@@ -36,7 +36,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: create files.
+  // Exported permission: 'create files'.
   $permissions['create files'] = array(
     'name' => 'create files',
     'roles' => array(
@@ -47,7 +47,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: create page content.
+  // Exported permission: 'create page content'.
   $permissions['create page content'] = array(
     'name' => 'create page content',
     'roles' => array(
@@ -57,7 +57,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete any page content.
+  // Exported permission: 'delete any page content'.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
     'roles' => array(
@@ -67,7 +67,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete own page content.
+  // Exported permission: 'delete own page content'.
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
     'roles' => array(
@@ -77,7 +77,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit any page content.
+  // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
     'roles' => array(
@@ -88,7 +88,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: edit own page content.
+  // Exported permission: 'edit own page content'.
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
     'roles' => array(
@@ -99,7 +99,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: exclude any node title.
+  // Exported permission: 'exclude any node title'.
   $permissions['exclude any node title'] = array(
     'name' => 'exclude any node title',
     'roles' => array(
@@ -108,7 +108,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'exclude_node_title',
   );
 
-  // Exported permission: exclude own node title.
+  // Exported permission: 'exclude own node title'.
   $permissions['exclude own node title'] = array(
     'name' => 'exclude own node title',
     'roles' => array(
@@ -117,7 +117,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'exclude_node_title',
   );
 
-  // Exported permission: use exclude node title.
+  // Exported permission: 'use exclude node title'.
   $permissions['use exclude node title'] = array(
     'name' => 'use exclude node title',
     'roles' => array(
@@ -127,7 +127,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'exclude_node_title',
   );
 
-  // Exported permission: use text format html.
+  // Exported permission: 'use text format html'.
   $permissions['use text format html'] = array(
     'name' => 'use text format html',
     'roles' => array(
@@ -140,7 +140,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: view files.
+  // Exported permission: 'view files'.
   $permissions['view files'] = array(
     'name' => 'view files',
     'roles' => array(
@@ -150,7 +150,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: view own files.
+  // Exported permission: 'view own files'.
   $permissions['view own files'] = array(
     'name' => 'view own files',
     'roles' => array(
@@ -161,7 +161,7 @@ function asc_image_handling_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: view own private files.
+  // Exported permission: 'view own private files'.
   $permissions['view own private files'] = array(
     'name' => 'view own private files',
     'roles' => array(

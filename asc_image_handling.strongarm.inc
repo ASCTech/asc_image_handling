@@ -302,6 +302,13 @@ function asc_image_handling_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'file_entity_file_upload_wizard_skip_scheme';
+  $strongarm->value = 0;
+  $export['file_entity_file_upload_wizard_skip_scheme'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'lightbox2_border_size';
   $strongarm->value = '10';
   $export['lightbox2_border_size'] = $strongarm;
@@ -346,8 +353,8 @@ function asc_image_handling_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'media__wysiwyg_allowed_types';
   $strongarm->value = array(
-    0 => 'video',
-    1 => 'image',
+    0 => 'image',
+    1 => 'video',
     2 => 'audio',
     3 => 'document',
   );
