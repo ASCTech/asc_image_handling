@@ -346,8 +346,8 @@ function asc_image_handling_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'media__wysiwyg_allowed_types';
   $strongarm->value = array(
-    0 => 'video',
-    1 => 'image',
+    0 => 'image',
+    1 => 'video',
     2 => 'audio',
     3 => 'document',
   );

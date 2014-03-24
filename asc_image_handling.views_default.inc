@@ -78,7 +78,7 @@ function asc_image_handling_views_default_views() {
   $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
-  /* Contextual filter: Taxonomy Entity Index: Has taxonomy term ID on File (indexed in taxonomy_entity_index) */
+  /* Contextual filter: Broken/missing handler */
   $handler->display->display_options['arguments']['taxonomy_entity_index_tid']['id'] = 'taxonomy_entity_index_tid';
   $handler->display->display_options['arguments']['taxonomy_entity_index_tid']['table'] = 'file_managed';
   $handler->display->display_options['arguments']['taxonomy_entity_index_tid']['field'] = 'taxonomy_entity_index_tid';
