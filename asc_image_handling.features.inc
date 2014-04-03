@@ -7,13 +7,16 @@
 /**
  * Implements hook_ctools_plugin_api().
  */
-function asc_image_handling_ctools_plugin_api($module = NULL, $api = NULL) {
+function asc_image_handling_ctools_plugin_api() {
+  list($module, $api) = func_get_args();
   if ($module == "ds" && $api == "ds") {
     return array("version" => "1");
   }
+  list($module, $api) = func_get_args();
   if ($module == "file_entity" && $api == "file_default_displays") {
     return array("version" => "1");
   }
+  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -22,7 +25,7 @@ function asc_image_handling_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_views_api().
  */
-function asc_image_handling_views_api($module = NULL, $api = NULL) {
+function asc_image_handling_views_api() {
   return array("api" => "3.0");
 }
 
@@ -46,13 +49,12 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 140,
-          'height' => 140,
+          'width' => '140',
+          'height' => '140',
         ),
-        'weight' => 1,
+        'weight' => '1',
       ),
     ),
-    'label' => '150_square',
   );
 
   // Exported image style: 250_square_thumbnail.
@@ -69,13 +71,12 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 250,
-          'height' => 250,
+          'width' => '250',
+          'height' => '250',
         ),
-        'weight' => 1,
+        'weight' => '1',
       ),
     ),
-    'label' => '250_square_thumbnail',
   );
 
   // Exported image style: 40_square.
@@ -92,13 +93,12 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 40,
-          'height' => 40,
+          'width' => '40',
+          'height' => '40',
         ),
-        'weight' => 1,
+        'weight' => '1',
       ),
     ),
-    'label' => '40_square',
   );
 
   // Exported image style: 70_square.
@@ -115,13 +115,12 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 70,
-          'height' => 70,
+          'width' => '70',
+          'height' => '70',
         ),
-        'weight' => 1,
+        'weight' => '1',
       ),
     ),
-    'label' => '70_square',
   );
 
   // Exported image style: front_short.
@@ -138,13 +137,12 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 460,
-          'height' => 262,
+          'width' => '460',
+          'height' => '262',
         ),
-        'weight' => 1,
+        'weight' => '1',
       ),
     ),
-    'label' => 'front_short',
   );
 
   // Exported image style: front_tall.
@@ -161,13 +159,12 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 460,
-          'height' => 583,
+          'width' => '460',
+          'height' => '583',
         ),
-        'weight' => 1,
+        'weight' => '1',
       ),
     ),
-    'label' => 'front_tall',
   );
 
   // Exported image style: full_width.
@@ -184,14 +181,13 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => 620,
+          'width' => '620',
           'height' => '',
           'upscale' => 0,
         ),
-        'weight' => 1,
+        'weight' => '1',
       ),
     ),
-    'label' => 'full_width',
   );
 
   // Exported image style: half_width.
@@ -208,14 +204,13 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => 365,
+          'width' => '365',
           'height' => '',
           'upscale' => 0,
         ),
-        'weight' => 1,
+        'weight' => '1',
       ),
     ),
-    'label' => 'half_width',
   );
 
   // Exported image style: modal.
@@ -232,11 +227,11 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => 630,
+          'width' => '630',
           'height' => '',
           'upscale' => 1,
         ),
-        'weight' => 1,
+        'weight' => '1',
       ),
       9 => array(
         'label' => 'Crop',
@@ -248,14 +243,13 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_crop',
         'data' => array(
-          'width' => 630,
-          'height' => 630,
+          'width' => '630',
+          'height' => '630',
           'anchor' => 'center-center',
         ),
-        'weight' => 2,
+        'weight' => '2',
       ),
     ),
-    'label' => 'modal',
   );
 
   // Exported image style: quarter_width.
@@ -272,14 +266,13 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => 180,
+          'width' => '180',
           'height' => '',
           'upscale' => 0,
         ),
-        'weight' => 1,
+        'weight' => '1',
       ),
     ),
-    'label' => 'quarter_width',
   );
 
   // Exported image style: slider.
@@ -296,13 +289,12 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 620,
-          'height' => 330,
+          'width' => '620',
+          'height' => '330',
         ),
-        'weight' => 1,
+        'weight' => '1',
       ),
     ),
-    'label' => 'slider',
   );
 
   // Exported image style: sliderthumb.
@@ -319,13 +311,12 @@ function asc_image_handling_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 68,
-          'height' => 68,
+          'width' => '68',
+          'height' => '68',
         ),
-        'weight' => 1,
+        'weight' => '1',
       ),
     ),
-    'label' => 'sliderthumb',
   );
 
   return $styles;
