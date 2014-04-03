@@ -19,12 +19,12 @@ function asc_image_handling_default_fe_block_settings() {
     'delta' => 'image_terms_1',
     'module' => 'asc_taxonomy_filter',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => 'gallery*',
     'roles' => array(),
     'themes' => array(
       'q7' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'sidebar',
+        'status' => 1,
         'theme' => 'q7',
         'weight' => -27,
       ),

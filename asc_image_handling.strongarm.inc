@@ -344,6 +344,13 @@ function asc_image_handling_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'media__file_extensions';
+  $strongarm->value = 'jpg jpeg gif png txt doc docx xls xlsx pdf ppt pptx pps ppsx odt ods odp mp3 mov mp4 m4a m4v mpeg avi ogg oga ogv wmv ico zip';
+  $export['media__file_extensions'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'media__show_deprecated_view_modes';
   $strongarm->value = TRUE;
   $export['media__show_deprecated_view_modes'] = $strongarm;
@@ -353,8 +360,8 @@ function asc_image_handling_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'media__wysiwyg_allowed_types';
   $strongarm->value = array(
-    0 => 'image',
-    1 => 'video',
+    0 => 'video',
+    1 => 'image',
     2 => 'audio',
     3 => 'document',
   );

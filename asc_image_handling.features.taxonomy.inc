@@ -10,7 +10,7 @@
 function asc_image_handling_taxonomy_default_vocabularies() {
   return array(
     'image_terms_1' => array(
-      'name' => 'Image Terms 1',
+      'name' => 'Specializations',
       'machine_name' => 'image_terms_1',
       'description' => 'Describes the first set of terms for images.',
       'hierarchy' => 0,
