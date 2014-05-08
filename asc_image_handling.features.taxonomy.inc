@@ -10,9 +10,9 @@
 function asc_image_handling_taxonomy_default_vocabularies() {
   return array(
     'image_terms_1' => array(
-      'name' => 'Specializations',
+      'name' => 'Events',
       'machine_name' => 'image_terms_1',
-      'description' => 'Describes the first set of terms for images.',
+      'description' => 'Event name for images',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => -10,
