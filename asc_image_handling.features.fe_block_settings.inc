@@ -23,8 +23,8 @@ function asc_image_handling_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'q7' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'sidebar',
+        'status' => 1,
         'theme' => 'q7',
         'weight' => -27,
       ),
