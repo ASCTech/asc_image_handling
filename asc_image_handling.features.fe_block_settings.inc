@@ -23,8 +23,8 @@ function asc_image_handling_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'q7' => array(
-        'region' => 'sidebar',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'q7',
         'weight' => -27,
       ),
@@ -82,7 +82,8 @@ function asc_image_handling_default_fe_block_settings() {
     'machine_name' => 'blank',
     'module' => 'block',
     'node_types' => array(),
-    'pages' => '<front>',
+    'pages' => '<front>
+mssi',
     'roles' => array(),
     'themes' => array(
       'q7' => array(
