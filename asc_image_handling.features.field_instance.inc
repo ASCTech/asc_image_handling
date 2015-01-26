@@ -180,7 +180,7 @@ function asc_image_handling_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 300,
+        'size' => 60,
       ),
       'type' => 'text_textfield',
       'weight' => 4,

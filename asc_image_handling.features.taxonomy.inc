@@ -10,7 +10,7 @@
 function asc_image_handling_taxonomy_default_vocabularies() {
   return array(
     'image_terms_1' => array(
-      'name' => 'Events',
+      'name' => 'Image Terms 1',
       'machine_name' => 'image_terms_1',
       'description' => 'Event name for images',
       'hierarchy' => 0,
